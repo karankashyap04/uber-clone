@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, FlatList, TouchableOpacity, Image } from "react-native";
+import { Icon } from "react-native-elements";
 import tw from "twrnc";
 
 const data = [
@@ -31,6 +32,12 @@ export default function NavigationOptions() {
               style={{ width: 120, height: 120, resizeMode: "contain" }}
             />
             <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
+            <Icon
+              style={tw`p-2 mt-4 w-10 bg-black rounded-full`}
+              type="antdesign"
+              name="arrowright"
+              color="white"
+            />
           </View>
         </TouchableOpacity>
       )}
